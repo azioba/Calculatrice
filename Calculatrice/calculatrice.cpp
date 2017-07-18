@@ -41,7 +41,7 @@ bool minus;
 bool time;
 bool divide;
 bool Sqrt;
-double a, b, c;
+
 
 
 
