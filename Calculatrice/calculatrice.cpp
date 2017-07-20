@@ -4,7 +4,8 @@
 
 #include<iostream>
 
-double firstNum;
+double firstNumber;
+bool ecritSecondNombre = false;
 
 Calculatrice::Calculatrice(QWidget *parent)
 	: QMainWindow(parent)
@@ -36,11 +37,6 @@ Calculatrice::Calculatrice(QWidget *parent)
 	ui.ButtonDivis->setCheckable(true);
 }
 
-bool plus;
-bool minus;
-bool time;
-bool divide;
-bool Sqrt;
 
 
 
@@ -59,19 +55,25 @@ void Calculatrice::button_pressed()
 	double nbreMemoire;
 	QString newLabel;
 
-	if (ui.ButtonPlus->isChecked() || ui.ButtonMoins->isChecked() || ui.ButtonMultip->isChecked() || ui.ButtonDivis->isChecked())
+	if ((ui.ButtonPlus->isChecked() || ui.ButtonMoins->isChecked() || ui.ButtonMultip->isChecked() || ui.ButtonDivis->isChecked())
+		&& (!ecritSecondNombre))
 	{
 		nbreMemoire = button->text().toDouble();
+		ecritSecondNombre = true;
+		newLabel = QString::number(nbreMemoire, 'g', 12);
 	}
 	else
 	{
-		nbreMemoire = (ui.label->text() + button->text()).toDouble();
+		if (ui.label->text().contains('.') && button->text() == "0") // pour pouvoir écrire un nombre decimal avec 0 (0.01 par exemple)
+		{
+			newLabel = ui.label->text() + button->text();
+		}
+		else
+		{
+			nbreMemoire = (ui.label->text() + button->text()).toDouble();
+			newLabel = QString::number(nbreMemoire, 'g', 12);
+		}	
 	}
-
-	
-
-	newLabel = QString::number(nbreMemoire,'g',12);
-
 	ui.label->setText(newLabel);
 }
 
@@ -104,6 +106,14 @@ void Calculatrice::unary_operation_pressed()
 
 void Calculatrice::on_ButtonReset_released()
 {
+	ui.ButtonPlus->setChecked(false);
+	ui.ButtonMoins->setChecked(false);
+	ui.ButtonDivis->setChecked(false);
+	ui.ButtonMultip->setChecked(false);
+
+	ecritSecondNombre = false;
+
+	ui.label->setText("0");
 }
 
 void Calculatrice::on_ButtonEnter_released()
@@ -115,7 +125,7 @@ void Calculatrice::on_ButtonEnter_released()
 
 	if (ui.ButtonPlus->isChecked())
 	{
-		nbreMemoire = firstNum + secondNumber;
+		nbreMemoire = firstNumber + secondNumber;
 		newLabel = QString::number(nbreMemoire, 'g', 12);
 		ui.label->setText(newLabel);
 		ui.ButtonPlus->setChecked(false);
@@ -123,32 +133,33 @@ void Calculatrice::on_ButtonEnter_released()
 	}
 	else if (ui.ButtonMoins->isChecked())
 	{
-		nbreMemoire = firstNum - secondNumber;
+		nbreMemoire = firstNumber - secondNumber;
 		newLabel = QString::number(nbreMemoire, 'g', 12);
 		ui.label->setText(newLabel);
 		ui.ButtonMoins->setChecked(false);
 	}
 	else if (ui.ButtonMultip->isChecked())
 	{
-		nbreMemoire = firstNum * secondNumber;
+		nbreMemoire = firstNumber * secondNumber;
 		newLabel = QString::number(nbreMemoire, 'g', 12);
 		ui.label->setText(newLabel);
 		ui.ButtonMultip->setChecked(false);
 	}
 	else if (ui.ButtonDivis->isChecked())
 	{
-		nbreMemoire = firstNum / secondNumber;
+		nbreMemoire = firstNumber / secondNumber;
 		newLabel = QString::number(nbreMemoire, 'g', 12);
 		ui.label->setText(newLabel);
 		ui.ButtonDivis->setChecked(false);
 	}
+	ecritSecondNombre = false;
 }
 
 void Calculatrice::binary_operation_pressed()
 {
 	QPushButton *button = (QPushButton*)sender();
 
-	firstNum = ui.label->text().toDouble();
+	firstNumber = ui.label->text().toDouble();
 
 	button->setChecked(true);
 }
