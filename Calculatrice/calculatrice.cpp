@@ -3,6 +3,7 @@
 
 
 #include<iostream>
+#include<math.h>
 
 double firstNumber;
 bool ecritSecondNombre = false;
@@ -25,16 +26,25 @@ Calculatrice::Calculatrice(QWidget *parent)
 
 	connect(ui.ButtonPlusMinus, SIGNAL(released()), this, SLOT(unary_operation_pressed()));
 	connect(ui.ButtonModulo, SIGNAL(released()), this, SLOT(unary_operation_pressed()));
+	connect(ui.ButtonSin, SIGNAL(released()), this, SLOT(unary_operation_pressed()));
+	connect(ui.ButtonCos, SIGNAL(released()), this, SLOT(unary_operation_pressed()));
+	connect(ui.ButtonTan, SIGNAL(released()), this, SLOT(unary_operation_pressed()));
+	connect(ui.ButtonRacineCarre, SIGNAL(released()), this, SLOT(unary_operation_pressed()));
+	connect(ui.ButtonLogNep, SIGNAL(released()), this, SLOT(unary_operation_pressed()));
+	connect(ui.ButtonLogDec, SIGNAL(released()), this, SLOT(unary_operation_pressed()));
+	connect(ui.ButtonFacto, SIGNAL(released()), this, SLOT(unary_operation_pressed()));
 
 	connect(ui.ButtonPlus, SIGNAL(released()), this, SLOT(binary_operation_pressed()));
 	connect(ui.ButtonMoins, SIGNAL(released()), this, SLOT(binary_operation_pressed()));
 	connect(ui.ButtonMultip, SIGNAL(released()), this, SLOT(binary_operation_pressed()));
 	connect(ui.ButtonDivis, SIGNAL(released()), this, SLOT(binary_operation_pressed()));
+	connect(ui.ButtonCarre, SIGNAL(released()), this, SLOT(binary_operation_pressed()));
 
 	ui.ButtonPlus->setCheckable(true);
 	ui.ButtonMoins->setCheckable(true);
 	ui.ButtonMultip->setCheckable(true);
 	ui.ButtonDivis->setCheckable(true);
+	ui.ButtonCarre->setCheckable(true);
 }
 
 
@@ -48,6 +58,8 @@ Calculatrice::~Calculatrice()
 
 
 
+
+
 void Calculatrice::button_pressed()
 {
 	QPushButton *button = (QPushButton*)sender();
@@ -55,7 +67,7 @@ void Calculatrice::button_pressed()
 	double nbreMemoire;
 	QString newLabel;
 
-	if ((ui.ButtonPlus->isChecked() || ui.ButtonMoins->isChecked() || ui.ButtonMultip->isChecked() || ui.ButtonDivis->isChecked())
+	if ((ui.ButtonPlus->isChecked() || ui.ButtonMoins->isChecked() || ui.ButtonMultip->isChecked() || ui.ButtonDivis->isChecked()|| ui.ButtonCarre->isChecked())
 		&& (!ecritSecondNombre))
 	{
 		nbreMemoire = button->text().toDouble();
@@ -102,6 +114,54 @@ void Calculatrice::unary_operation_pressed()
 		newLabel = QString::number(nbreMemoire, 'g', 12);
 		ui.label->setText(newLabel);
 	}
+
+	if (button->text() == "cos")
+	{
+		nbreMemoire = ui.label->text().toDouble();
+		nbreMemoire = cos(nbreMemoire);
+		newLabel = QString::number(nbreMemoire, 'g', 12);
+		ui.label->setText(newLabel);
+	}
+
+	if (button->text() == "sin")
+	{
+		nbreMemoire = ui.label->text().toDouble();
+		nbreMemoire = sin(nbreMemoire);
+		newLabel = QString::number(nbreMemoire, 'g', 12);
+		ui.label->setText(newLabel);
+	}
+
+	if (button->text() == "tan")
+	{
+		nbreMemoire = ui.label->text().toDouble();
+		nbreMemoire = tan(nbreMemoire);
+		newLabel = QString::number(nbreMemoire, 'g', 12);
+		ui.label->setText(newLabel);
+	}
+
+	if (button->text() == "ln")
+	{
+		nbreMemoire = ui.label->text().toDouble();
+		nbreMemoire = log(nbreMemoire);
+		newLabel = QString::number(nbreMemoire, 'g', 12);
+		ui.label->setText(newLabel);
+	}
+
+	if (button->text() == "log")
+	{
+		nbreMemoire = ui.label->text().toDouble();
+		nbreMemoire = log10(nbreMemoire);
+		newLabel = QString::number(nbreMemoire, 'g', 12);
+		ui.label->setText(newLabel);
+	}
+
+	if (button->text() == "e")
+	{
+		nbreMemoire = ui.label->text().toDouble();
+		nbreMemoire = exp(nbreMemoire);
+		newLabel = QString::number(nbreMemoire, 'g', 12);
+		ui.label->setText(newLabel);
+	}
 }
 
 void Calculatrice::on_ButtonReset_released()
@@ -110,6 +170,7 @@ void Calculatrice::on_ButtonReset_released()
 	ui.ButtonMoins->setChecked(false);
 	ui.ButtonDivis->setChecked(false);
 	ui.ButtonMultip->setChecked(false);
+	ui.ButtonCarre->setChecked(false);
 
 	ecritSecondNombre = false;
 
@@ -148,6 +209,13 @@ void Calculatrice::on_ButtonEnter_released()
 	else if (ui.ButtonDivis->isChecked())
 	{
 		nbreMemoire = firstNumber / secondNumber;
+		newLabel = QString::number(nbreMemoire, 'g', 12);
+		ui.label->setText(newLabel);
+		ui.ButtonDivis->setChecked(false);
+	}
+	else if (ui.ButtonCarre->isChecked())
+	{
+		nbreMemoire = firstNumber * firstNumber;
 		newLabel = QString::number(nbreMemoire, 'g', 12);
 		ui.label->setText(newLabel);
 		ui.ButtonDivis->setChecked(false);

@@ -758,7 +758,7 @@ border-radius:7px;
      <string>+/-</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="ButtonRacineCarre">
+   <widget class="QPushButton" name="pushButton_19">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -835,7 +835,7 @@ border-radius:7px;
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
     </property>
    </widget>
-   <widget class="QPushButton" name="ButtonLogNep">
+   <widget class="QPushButton" name="Button1_2">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -863,7 +863,7 @@ border-radius:7px;
      <string>ln</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="ButtonCarre">
+   <widget class="QPushButton" name="Button1_3">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -891,7 +891,7 @@ border-radius:7px;
      <string>x²</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="ButtonSin">
+   <widget class="QPushButton" name="Button1_4">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -916,10 +916,10 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
-     <string>sin</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="ButtonCos">
+   <widget class="QPushButton" name="Button1_5">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -944,10 +944,10 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
-     <string>cos</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="ButtonTan">
+   <widget class="QPushButton" name="Button1_6">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -972,10 +972,10 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
-     <string>tan</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="ButtonFacto">
+   <widget class="QPushButton" name="Button1_7">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -1000,10 +1000,10 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
-     <string>n!</string>
+     <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="ButtonExpo">
+   <widget class="QPushButton" name="Button1_8">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -1031,7 +1031,7 @@ border-radius:7px;
      <string>e</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="ButtonLogDec">
+   <widget class="QPushButton" name="Button1_9">
     <property name="geometry">
      <rect>
       <x>0</x>
@@ -1076,18 +1076,18 @@ border-radius:7px;
    <zorder>ButtonDivis</zorder>
    <zorder>ButtonEnter</zorder>
    <zorder>ButtonPlusMinus</zorder>
-   <zorder>ButtonRacineCarre</zorder>
+   <zorder>pushButton_19</zorder>
    <zorder>ButtonModulo</zorder>
    <zorder>label</zorder>
    <zorder>ButtonPlus</zorder>
-   <zorder>ButtonLogNep</zorder>
-   <zorder>ButtonCarre</zorder>
-   <zorder>ButtonSin</zorder>
-   <zorder>ButtonCos</zorder>
-   <zorder>ButtonTan</zorder>
-   <zorder>ButtonFacto</zorder>
-   <zorder>ButtonExpo</zorder>
-   <zorder>ButtonLogDec</zorder>
+   <zorder>Button1_2</zorder>
+   <zorder>Button1_3</zorder>
+   <zorder>Button1_4</zorder>
+   <zorder>Button1_5</zorder>
+   <zorder>Button1_6</zorder>
+   <zorder>Button1_7</zorder>
+   <zorder>Button1_8</zorder>
+   <zorder>Button1_9</zorder>
   </widget>
   <action name="actionExit">
    <property name="text">

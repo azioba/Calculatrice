@@ -12,6 +12,8 @@ public:
 	Calculatrice(QWidget *parent = 0);
 	~Calculatrice();
 
+
+
 private:
 	Ui::CalculatriceClass ui;
 
