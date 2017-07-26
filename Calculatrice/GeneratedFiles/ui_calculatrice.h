@@ -60,7 +60,7 @@ public:
     {
         if (CalculatriceClass->objectName().isEmpty())
             CalculatriceClass->setObjectName(QStringLiteral("CalculatriceClass"));
-        CalculatriceClass->resize(562, 358);
+        CalculatriceClass->resize(593, 390);
         CalculatriceClass->setStyleSheet(QLatin1String("\n"
 "QPushButton\n"
 "{\n"
@@ -90,12 +90,16 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         Button1 = new QPushButton(centralWidget);
         Button1->setObjectName(QStringLiteral("Button1"));
-        Button1->setGeometry(QRect(140, 100, 61, 61));
+        Button1->setEnabled(true);
+        Button1->setGeometry(QRect(140, 110, 61, 61));
         QFont font;
         font.setPointSize(20);
         font.setBold(true);
         font.setWeight(75);
         Button1->setFont(font);
+        Button1->setMouseTracking(false);
+        Button1->setFocusPolicy(Qt::StrongFocus);
+        Button1->setAutoFillBackground(false);
         Button1->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
 "border-style:solid;\n"
@@ -104,9 +108,10 @@ public:
 "color:rgb(0, 0, 0);\n"
 "border-radius:7px;\n"
 "}"));
+        Button1->setFlat(false);
         Button4 = new QPushButton(centralWidget);
         Button4->setObjectName(QStringLiteral("Button4"));
-        Button4->setGeometry(QRect(140, 160, 61, 61));
+        Button4->setGeometry(QRect(140, 180, 61, 61));
         Button4->setFont(font);
         Button4->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -118,7 +123,7 @@ public:
 "}"));
         Button7 = new QPushButton(centralWidget);
         Button7->setObjectName(QStringLiteral("Button7"));
-        Button7->setGeometry(QRect(140, 220, 61, 61));
+        Button7->setGeometry(QRect(140, 250, 61, 61));
         Button7->setFont(font);
         Button7->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -130,7 +135,7 @@ public:
 "}"));
         ButtonReset = new QPushButton(centralWidget);
         ButtonReset->setObjectName(QStringLiteral("ButtonReset"));
-        ButtonReset->setGeometry(QRect(140, 280, 61, 61));
+        ButtonReset->setGeometry(QRect(140, 320, 61, 61));
         QFont font1;
         font1.setPointSize(20);
         ButtonReset->setFont(font1);
@@ -144,7 +149,7 @@ public:
 "}"));
         Button0 = new QPushButton(centralWidget);
         Button0->setObjectName(QStringLiteral("Button0"));
-        Button0->setGeometry(QRect(200, 280, 61, 61));
+        Button0->setGeometry(QRect(210, 320, 61, 61));
         Button0->setFont(font);
         Button0->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -156,7 +161,7 @@ public:
 "}"));
         ButtonPoint = new QPushButton(centralWidget);
         ButtonPoint->setObjectName(QStringLiteral("ButtonPoint"));
-        ButtonPoint->setGeometry(QRect(260, 280, 61, 61));
+        ButtonPoint->setGeometry(QRect(280, 320, 61, 61));
         ButtonPoint->setFont(font);
         ButtonPoint->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -169,7 +174,7 @@ public:
         ButtonPoint->setFlat(false);
         Button8 = new QPushButton(centralWidget);
         Button8->setObjectName(QStringLiteral("Button8"));
-        Button8->setGeometry(QRect(200, 220, 61, 61));
+        Button8->setGeometry(QRect(210, 250, 61, 61));
         Button8->setFont(font);
         Button8->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -181,7 +186,7 @@ public:
 "}"));
         Button5 = new QPushButton(centralWidget);
         Button5->setObjectName(QStringLiteral("Button5"));
-        Button5->setGeometry(QRect(200, 160, 61, 61));
+        Button5->setGeometry(QRect(210, 180, 61, 61));
         Button5->setFont(font);
         Button5->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -193,7 +198,7 @@ public:
 "}"));
         Button2 = new QPushButton(centralWidget);
         Button2->setObjectName(QStringLiteral("Button2"));
-        Button2->setGeometry(QRect(200, 100, 61, 61));
+        Button2->setGeometry(QRect(210, 110, 61, 61));
         Button2->setFont(font);
         Button2->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -205,7 +210,7 @@ public:
 "}"));
         Button9 = new QPushButton(centralWidget);
         Button9->setObjectName(QStringLiteral("Button9"));
-        Button9->setGeometry(QRect(260, 220, 61, 61));
+        Button9->setGeometry(QRect(280, 250, 61, 61));
         Button9->setFont(font);
         Button9->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -217,7 +222,7 @@ public:
 "}"));
         Button6 = new QPushButton(centralWidget);
         Button6->setObjectName(QStringLiteral("Button6"));
-        Button6->setGeometry(QRect(260, 160, 61, 61));
+        Button6->setGeometry(QRect(280, 180, 61, 61));
         Button6->setFont(font);
         Button6->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -229,7 +234,7 @@ public:
 "}"));
         Button3 = new QPushButton(centralWidget);
         Button3->setObjectName(QStringLiteral("Button3"));
-        Button3->setGeometry(QRect(260, 100, 61, 61));
+        Button3->setGeometry(QRect(280, 110, 61, 61));
         Button3->setFont(font);
         Button3->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -241,7 +246,7 @@ public:
 "}"));
         ButtonPlus = new QPushButton(centralWidget);
         ButtonPlus->setObjectName(QStringLiteral("ButtonPlus"));
-        ButtonPlus->setGeometry(QRect(330, 100, 111, 61));
+        ButtonPlus->setGeometry(QRect(350, 110, 111, 61));
         QPalette palette;
         QBrush brush(QColor(0, 0, 0, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -280,7 +285,7 @@ public:
         ButtonPlus->setFlat(false);
         ButtonMultip = new QPushButton(centralWidget);
         ButtonMultip->setObjectName(QStringLiteral("ButtonMultip"));
-        ButtonMultip->setGeometry(QRect(330, 160, 111, 61));
+        ButtonMultip->setGeometry(QRect(350, 180, 111, 61));
         ButtonMultip->setFont(font1);
         ButtonMultip->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -292,7 +297,7 @@ public:
 "}"));
         ButtonMoins = new QPushButton(centralWidget);
         ButtonMoins->setObjectName(QStringLiteral("ButtonMoins"));
-        ButtonMoins->setGeometry(QRect(330, 220, 111, 61));
+        ButtonMoins->setGeometry(QRect(350, 250, 111, 61));
         ButtonMoins->setFont(font1);
         ButtonMoins->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -304,7 +309,7 @@ public:
 "}"));
         ButtonDivis = new QPushButton(centralWidget);
         ButtonDivis->setObjectName(QStringLiteral("ButtonDivis"));
-        ButtonDivis->setGeometry(QRect(330, 280, 111, 61));
+        ButtonDivis->setGeometry(QRect(350, 320, 111, 61));
         ButtonDivis->setFont(font1);
         ButtonDivis->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -317,7 +322,7 @@ public:
 ""));
         ButtonEnter = new QPushButton(centralWidget);
         ButtonEnter->setObjectName(QStringLiteral("ButtonEnter"));
-        ButtonEnter->setGeometry(QRect(450, 280, 111, 61));
+        ButtonEnter->setGeometry(QRect(470, 320, 111, 61));
         ButtonEnter->setFont(font);
         ButtonEnter->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -329,7 +334,7 @@ public:
 "}"));
         ButtonPlusMinus = new QPushButton(centralWidget);
         ButtonPlusMinus->setObjectName(QStringLiteral("ButtonPlusMinus"));
-        ButtonPlusMinus->setGeometry(QRect(450, 160, 111, 61));
+        ButtonPlusMinus->setGeometry(QRect(470, 180, 111, 61));
         ButtonPlusMinus->setFont(font1);
         ButtonPlusMinus->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -341,7 +346,7 @@ public:
 "}"));
         ButtonRacineCarre = new QPushButton(centralWidget);
         ButtonRacineCarre->setObjectName(QStringLiteral("ButtonRacineCarre"));
-        ButtonRacineCarre->setGeometry(QRect(450, 100, 111, 61));
+        ButtonRacineCarre->setGeometry(QRect(470, 110, 111, 61));
         ButtonRacineCarre->setFont(font1);
         ButtonRacineCarre->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -353,7 +358,7 @@ public:
 "}"));
         ButtonModulo = new QPushButton(centralWidget);
         ButtonModulo->setObjectName(QStringLiteral("ButtonModulo"));
-        ButtonModulo->setGeometry(QRect(450, 220, 111, 61));
+        ButtonModulo->setGeometry(QRect(470, 250, 111, 61));
         ButtonModulo->setFont(font1);
         ButtonModulo->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -365,14 +370,14 @@ public:
 "}"));
         label = new QLabel(centralWidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(0, 0, 551, 91));
+        label->setGeometry(QRect(0, 0, 581, 91));
         QFont font2;
         font2.setPointSize(48);
         label->setFont(font2);
         label->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         ButtonLogNep = new QPushButton(centralWidget);
         ButtonLogNep->setObjectName(QStringLiteral("ButtonLogNep"));
-        ButtonLogNep->setGeometry(QRect(0, 100, 61, 61));
+        ButtonLogNep->setGeometry(QRect(0, 110, 61, 61));
         ButtonLogNep->setFont(font1);
         ButtonLogNep->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -384,7 +389,7 @@ public:
 "}"));
         ButtonCarre = new QPushButton(centralWidget);
         ButtonCarre->setObjectName(QStringLiteral("ButtonCarre"));
-        ButtonCarre->setGeometry(QRect(70, 100, 61, 61));
+        ButtonCarre->setGeometry(QRect(70, 110, 61, 61));
         ButtonCarre->setFont(font1);
         ButtonCarre->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -396,7 +401,7 @@ public:
 "}"));
         ButtonSin = new QPushButton(centralWidget);
         ButtonSin->setObjectName(QStringLiteral("ButtonSin"));
-        ButtonSin->setGeometry(QRect(70, 160, 61, 61));
+        ButtonSin->setGeometry(QRect(70, 180, 61, 61));
         ButtonSin->setFont(font1);
         ButtonSin->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -408,7 +413,7 @@ public:
 "}"));
         ButtonCos = new QPushButton(centralWidget);
         ButtonCos->setObjectName(QStringLiteral("ButtonCos"));
-        ButtonCos->setGeometry(QRect(70, 220, 61, 61));
+        ButtonCos->setGeometry(QRect(70, 250, 61, 61));
         ButtonCos->setFont(font1);
         ButtonCos->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -420,7 +425,7 @@ public:
 "}"));
         ButtonTan = new QPushButton(centralWidget);
         ButtonTan->setObjectName(QStringLiteral("ButtonTan"));
-        ButtonTan->setGeometry(QRect(70, 280, 61, 61));
+        ButtonTan->setGeometry(QRect(70, 320, 61, 61));
         ButtonTan->setFont(font1);
         ButtonTan->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -432,7 +437,7 @@ public:
 "}"));
         ButtonFacto = new QPushButton(centralWidget);
         ButtonFacto->setObjectName(QStringLiteral("ButtonFacto"));
-        ButtonFacto->setGeometry(QRect(0, 280, 61, 61));
+        ButtonFacto->setGeometry(QRect(0, 320, 61, 61));
         ButtonFacto->setFont(font1);
         ButtonFacto->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -444,7 +449,7 @@ public:
 "}"));
         ButtonExpo = new QPushButton(centralWidget);
         ButtonExpo->setObjectName(QStringLiteral("ButtonExpo"));
-        ButtonExpo->setGeometry(QRect(0, 220, 61, 61));
+        ButtonExpo->setGeometry(QRect(0, 250, 61, 61));
         ButtonExpo->setFont(font1);
         ButtonExpo->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -456,7 +461,7 @@ public:
 "}"));
         ButtonLogDec = new QPushButton(centralWidget);
         ButtonLogDec->setObjectName(QStringLiteral("ButtonLogDec"));
-        ButtonLogDec->setGeometry(QRect(0, 160, 61, 61));
+        ButtonLogDec->setGeometry(QRect(0, 180, 61, 61));
         ButtonLogDec->setFont(font1);
         ButtonLogDec->setStyleSheet(QLatin1String("QPushButton{\n"
 "	border-color: rgb(0, 0, 0);\n"
@@ -467,7 +472,6 @@ public:
 "border-radius:7px;\n"
 "}"));
         CalculatriceClass->setCentralWidget(centralWidget);
-        Button1->raise();
         Button4->raise();
         Button7->raise();
         ButtonReset->raise();
@@ -496,6 +500,7 @@ public:
         ButtonFacto->raise();
         ButtonExpo->raise();
         ButtonLogDec->raise();
+        Button1->raise();
 
         retranslateUi(CalculatriceClass);
 

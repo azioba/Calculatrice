@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>593</width>
-    <height>390</height>
+    <width>562</width>
+    <height>358</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -46,7 +46,7 @@ background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, st
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>110</y>
+      <y>100</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -62,10 +62,7 @@ background-color: qlineargradient(spread:pad, x1:0.517, y1:0, x2:0.517, y2:1, st
      <bool>false</bool>
     </property>
     <property name="focusPolicy">
-     <enum>Qt::StrongFocus</enum>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
+     <enum>Qt::ClickFocus</enum>
     </property>
     <property name="styleSheet">
      <string notr="true">QPushButton{
@@ -80,15 +77,12 @@ border-radius:7px;
     <property name="text">
      <string>1</string>
     </property>
-    <property name="flat">
-     <bool>false</bool>
-    </property>
    </widget>
    <widget class="QPushButton" name="Button4">
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>180</y>
+      <y>160</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -118,7 +112,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>250</y>
+      <y>220</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -148,7 +142,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>140</x>
-      <y>320</y>
+      <y>280</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -175,8 +169,8 @@ border-radius:7px;
    <widget class="QPushButton" name="Button0">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>320</y>
+      <x>200</x>
+      <y>280</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -205,8 +199,8 @@ border-radius:7px;
    <widget class="QPushButton" name="ButtonPoint">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>320</y>
+      <x>260</x>
+      <y>280</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -241,8 +235,8 @@ border-radius:7px;
    <widget class="QPushButton" name="Button8">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>250</y>
+      <x>200</x>
+      <y>220</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -271,8 +265,8 @@ border-radius:7px;
    <widget class="QPushButton" name="Button5">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>180</y>
+      <x>200</x>
+      <y>160</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -301,8 +295,8 @@ border-radius:7px;
    <widget class="QPushButton" name="Button2">
     <property name="geometry">
      <rect>
-      <x>210</x>
-      <y>110</y>
+      <x>200</x>
+      <y>100</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -331,8 +325,8 @@ border-radius:7px;
    <widget class="QPushButton" name="Button9">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>250</y>
+      <x>260</x>
+      <y>220</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -361,8 +355,8 @@ border-radius:7px;
    <widget class="QPushButton" name="Button6">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>180</y>
+      <x>260</x>
+      <y>160</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -391,8 +385,8 @@ border-radius:7px;
    <widget class="QPushButton" name="Button3">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>110</y>
+      <x>260</x>
+      <y>100</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -421,8 +415,8 @@ border-radius:7px;
    <widget class="QPushButton" name="ButtonPlus">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>110</y>
+      <x>330</x>
+      <y>100</y>
       <width>111</width>
       <height>61</height>
      </rect>
@@ -633,8 +627,8 @@ border-radius:7px;
    <widget class="QPushButton" name="ButtonMultip">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>180</y>
+      <x>330</x>
+      <y>160</y>
       <width>111</width>
       <height>61</height>
      </rect>
@@ -661,8 +655,8 @@ border-radius:7px;
    <widget class="QPushButton" name="ButtonMoins">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>250</y>
+      <x>330</x>
+      <y>220</y>
       <width>111</width>
       <height>61</height>
      </rect>
@@ -689,8 +683,8 @@ border-radius:7px;
    <widget class="QPushButton" name="ButtonDivis">
     <property name="geometry">
      <rect>
-      <x>350</x>
-      <y>320</y>
+      <x>330</x>
+      <y>280</y>
       <width>111</width>
       <height>61</height>
      </rect>
@@ -718,8 +712,8 @@ border-radius:7px;
    <widget class="QPushButton" name="ButtonEnter">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>320</y>
+      <x>450</x>
+      <y>280</y>
       <width>111</width>
       <height>61</height>
      </rect>
@@ -748,8 +742,8 @@ border-radius:7px;
    <widget class="QPushButton" name="ButtonPlusMinus">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>180</y>
+      <x>450</x>
+      <y>160</y>
       <width>111</width>
       <height>61</height>
      </rect>
@@ -776,8 +770,8 @@ border-radius:7px;
    <widget class="QPushButton" name="ButtonRacineCarre">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>110</y>
+      <x>450</x>
+      <y>100</y>
       <width>111</width>
       <height>61</height>
      </rect>
@@ -804,8 +798,8 @@ border-radius:7px;
    <widget class="QPushButton" name="ButtonModulo">
     <property name="geometry">
      <rect>
-      <x>470</x>
-      <y>250</y>
+      <x>450</x>
+      <y>220</y>
       <width>111</width>
       <height>61</height>
      </rect>
@@ -834,7 +828,7 @@ border-radius:7px;
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>581</width>
+      <width>551</width>
       <height>91</height>
      </rect>
     </property>
@@ -854,7 +848,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>110</y>
+      <y>100</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -882,7 +876,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>110</y>
+      <y>100</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -910,7 +904,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>180</y>
+      <y>160</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -938,7 +932,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>250</y>
+      <y>220</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -966,7 +960,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>70</x>
-      <y>320</y>
+      <y>280</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -994,7 +988,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>320</y>
+      <y>280</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -1022,7 +1016,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>250</y>
+      <y>220</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -1050,7 +1044,7 @@ border-radius:7px;
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>180</y>
+      <y>160</y>
       <width>61</width>
       <height>61</height>
      </rect>
@@ -1074,6 +1068,7 @@ border-radius:7px;
      <string>log</string>
     </property>
    </widget>
+   <zorder>Button1</zorder>
    <zorder>Button4</zorder>
    <zorder>Button7</zorder>
    <zorder>ButtonReset</zorder>
@@ -1102,7 +1097,6 @@ border-radius:7px;
    <zorder>ButtonFacto</zorder>
    <zorder>ButtonExpo</zorder>
    <zorder>ButtonLogDec</zorder>
-   <zorder>Button1</zorder>
   </widget>
   <action name="actionExit">
    <property name="text">
