@@ -2,6 +2,7 @@
 #define CALCULATRICE_H
 
 #include <QtWidgets/QMainWindow>
+#include <QKeyEvent>
 #include "ui_calculatrice.h"
 
 class Calculatrice : public QMainWindow
@@ -11,6 +12,10 @@ class Calculatrice : public QMainWindow
 public:
 	Calculatrice(QWidget *parent = 0);
 	~Calculatrice();
+
+protected:
+	void keyPressEvent(QKeyEvent *event);
+	
 
 
 

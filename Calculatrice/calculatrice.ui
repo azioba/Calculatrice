@@ -80,6 +80,9 @@ border-radius:7px;
     <property name="text">
      <string>1</string>
     </property>
+    <property name="shortcut">
+     <string>1</string>
+    </property>
     <property name="flat">
      <bool>false</bool>
     </property>
@@ -113,6 +116,9 @@ border-radius:7px;
     <property name="text">
      <string>4</string>
     </property>
+    <property name="shortcut">
+     <string>4</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="Button7">
     <property name="geometry">
@@ -143,6 +149,9 @@ border-radius:7px;
     <property name="text">
      <string>7</string>
     </property>
+    <property name="shortcut">
+     <string>7</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="ButtonReset">
     <property name="geometry">
@@ -170,6 +179,9 @@ border-radius:7px;
     </property>
     <property name="text">
      <string>C</string>
+    </property>
+    <property name="shortcut">
+     <string>Backspace</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Button0">
@@ -201,6 +213,9 @@ border-radius:7px;
     <property name="text">
      <string>0</string>
     </property>
+    <property name="shortcut">
+     <string>0</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="ButtonPoint">
     <property name="geometry">
@@ -229,6 +244,9 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
+     <string>.</string>
+    </property>
+    <property name="shortcut">
      <string>.</string>
     </property>
     <property name="default">
@@ -267,6 +285,9 @@ border-radius:7px;
     <property name="text">
      <string>8</string>
     </property>
+    <property name="shortcut">
+     <string>8</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="Button5">
     <property name="geometry">
@@ -295,6 +316,9 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
+     <string>5</string>
+    </property>
+    <property name="shortcut">
      <string>5</string>
     </property>
    </widget>
@@ -327,6 +351,9 @@ border-radius:7px;
     <property name="text">
      <string>2</string>
     </property>
+    <property name="shortcut">
+     <string>2</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="Button9">
     <property name="geometry">
@@ -355,6 +382,9 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
+     <string>9</string>
+    </property>
+    <property name="shortcut">
      <string>9</string>
     </property>
    </widget>
@@ -387,6 +417,9 @@ border-radius:7px;
     <property name="text">
      <string>6</string>
     </property>
+    <property name="shortcut">
+     <string>6</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="Button3">
     <property name="geometry">
@@ -415,6 +448,9 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
+     <string>3</string>
+    </property>
+    <property name="shortcut">
      <string>3</string>
     </property>
    </widget>
@@ -620,6 +656,9 @@ border-radius:7px;
     <property name="text">
      <string>+</string>
     </property>
+    <property name="shortcut">
+     <string>+</string>
+    </property>
     <property name="autoDefault">
      <bool>false</bool>
     </property>
@@ -657,6 +696,9 @@ border-radius:7px;
     <property name="text">
      <string>*</string>
     </property>
+    <property name="shortcut">
+     <string>*</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="ButtonMoins">
     <property name="geometry">
@@ -683,6 +725,9 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
+     <string>-</string>
+    </property>
+    <property name="shortcut">
      <string>-</string>
     </property>
    </widget>
@@ -714,6 +759,9 @@ border-radius:7px;
     <property name="text">
      <string>/</string>
     </property>
+    <property name="shortcut">
+     <string>/</string>
+    </property>
    </widget>
    <widget class="QPushButton" name="ButtonEnter">
     <property name="geometry">
@@ -742,6 +790,9 @@ border-radius:7px;
 }</string>
     </property>
     <property name="text">
+     <string>Enter</string>
+    </property>
+    <property name="shortcut">
      <string>Enter</string>
     </property>
    </widget>

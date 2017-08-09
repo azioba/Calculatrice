@@ -56,6 +56,14 @@ Calculatrice::~Calculatrice()
 
 }
 
+void Calculatrice::keyPressEvent(QKeyEvent * event)
+{
+	ui.label->setText(event->text());
+}
+
+
+
+
 
 
 
